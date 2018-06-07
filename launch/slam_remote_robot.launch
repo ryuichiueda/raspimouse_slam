@@ -1,6 +1,5 @@
 <launch>
   <include file="$(find raspimouse_ros_2)/launch/raspimouse.launch" /> 
-  <include file="$(find lab_usb_9axisimu_driver)/launch/lab_usb_9axisimu_driver.launch" /> 
 
   <node pkg="joy" name="joy_node" type="joy_node" required="true">
     <param name="autorepeat_rate" value="3" />
